@@ -5,3 +5,59 @@ Phone no 01414800490
 info.vweilindia@gmail.com
 
 https://www.facebook.com/profile.php?id=100085637974409
+
+patAbfwyNwXarHoxf.8fdba95bc847352b056ba0b5009240714c1f077726fd7d0c888f3e8221f7c46b
+
+all = patfOsWMKaB7Or5ct.9b6e879428136266be272adec3947e75ebcb8b32345e6e6fb942cf0f070f40b0
+
+
+
+salmon-hill-02a22a500.3.azurestaticapps.net
+
+
+
+
+
+base('table_Mail').create([
+  {
+    "fields": {
+      "Name": "test123@mail.com"
+    }
+  }
+], function(err, records) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  records.forEach(function (record) {
+    console.log(record.getId());
+  });
+});
+
+
+
+
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: 'YOUR_SECRET_API_TOKEN'}).base('appVlUGs2UNjwac7A');
+
+base('table_Mail').create([
+  {
+    "fields": {
+      "Name": "testt@mail.com"
+    }
+  },
+  {
+    "fields": {
+      "Name": "testt@mail.com"
+    }
+  }
+], function(err, records) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  records.forEach(function (record) {
+    console.log(record.getId());
+  });
+});
+    
