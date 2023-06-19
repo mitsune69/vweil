@@ -37,11 +37,7 @@ sendBtn.addEventListener("click", function () {
       console.error(err);
       return;
       }
-      records.forEach(function (record) {
-        console.log(record.getId());
-      });
     });
-
 
     return timeoutFunc;
   }
