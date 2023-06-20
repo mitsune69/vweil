@@ -21,6 +21,24 @@ sendBtn.addEventListener("click", function () {
     errorMsg.style.display = "inline";
     errorMsg.style.color = "green";
     errorMsg.textContent = "Thank you for subscribing to our newsletter!";
+    // upload to database
+    var Airtable = require('airtable');
+    var base = new Airtable({apiKey: 'patAbfwyNwXarHoxf.8fdba95bc847352b056ba0b5009240714c1f077726fd7d0c888f3e8221f7c46b'}).base('appVlUGs2UNjwac7A');
+
+    base('table_Mail').create([
+    {
+      "fields": {
+      "Name": inputEl.value
+      }
+    },
+
+    ], function(err, records) {
+      if (err) {
+      console.error(err);
+      return;
+      }
+    });
+
     return timeoutFunc;
   }
 });
