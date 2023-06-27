@@ -25,7 +25,7 @@ sendBtn.addEventListener("click", function () {
     var Airtable = require('airtable');
     var base = new Airtable({apiKey: 'patAbfwyNwXarHoxf.8fdba95bc847352b056ba0b5009240714c1f077726fd7d0c888f3e8221f7c46b'}).base('appVlUGs2UNjwac7A');
 
-    base('table_Mail').create([
+    base('singletap').create([
     {
       "fields": {
       "Name": inputEl.value
